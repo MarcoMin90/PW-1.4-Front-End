@@ -1,2 +1,21 @@
-Benvenuti in questa repo
-troverete il Front-End del PW universitario
+Questo progetto realizza un'applicazione web per la prenotazione online di stanze per un sistema Alberghiero nel nostro caso un hotel, 
+
+L'interfaccia utente è stata sviluppata utilizzando tecnologie web moderne: 
+ - HTML per strutturare i contenuti, 
+ - CSS (con Bootstrap ) per il design responsivo 
+ - JavaScript (con jQuery ) per gestire le interazioni dinamiche con il server.
+
+L'applicazione permette agli utenti di prenotare o cancellare una stanza tramite due moduli principali. Nel caso della prenotazione, 
+l'utente deve inserire informazioni personali (nome e email), scegliere il tipo di stanza desiderato (singola, doppia, tripla, quadrupla o suite) e specificare le date di check-in 
+e check-out. 
+Prima di inviare il modulo, è necessario selezionare una checkbox per accettare il trattamento dei dati personali, in conformità con la normativa sulla privacy. 
+Una volta completato, i dati vengono inviati al server backend tramite una richiesta AJAX , senza che la pagina venga ricaricata. 
+L'endpoint utilizzato per questa operazione è http://127.0.0.1:5000/prenota.
+Per quanto riguarda la cancellazione di una prenotazione, l'utente può annullare la sua richiesta fornendo semplicemente l'email associata alla prenotazione originale. 
+Anche in questo caso, i dati vengono inviati al server tramite una chiamata AJAX , questa volta all'endpoint http://127.0.0.1:5000/cancella.
+Il sistema fornisce feedback immediati all'utente sotto forma di alert dinamici , mostrando messaggi di conferma o segnalando eventuali errori durante l'elaborazione della richiesta.
+Ad esempio, se la prenotazione viene effettuata correttamente, l'utente riceve un messaggio di successo; in caso di errore, viene visualizzato un avviso dettagliato.
+Inoltre, è presente una sezione dedicata alla privacy , dove vengono spiegati i criteri di trattamento dei dati personali in conformità con la normativa vigente. 
+Gli utenti possono contattare l'hotel all'indirizzo info@hotelminichino.it per ulteriori chiarimenti o assistenza.
+Grazie all'integrazione di Bootstrap , il layout della pagina è completamente responsivo , garantendo un'esperienza coerente sia su dispositivi desktop che mobili.
+Questo rende l'interfaccia accessibile e facile da usare per tutti i tipi di utenti.
